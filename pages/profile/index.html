@@ -4,12 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/globalStyles.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="../../assets/src/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../styles/globalStyles.css" />
+    <link rel="stylesheet" href="../../styles/container.css">
+    <link rel="stylesheet" href="../../styles/display.css">
+    <link rel="stylesheet" href="../../styles/button.css">
+    <link rel="stylesheet" href="../../styles/margin.css">
+    <link rel="stylesheet" href="./index.css" />
     <title>Nome do usuário Github</title>
   </head>
   <body>
-    <main></main>
-    <script src="index.js"></script>
+    <main class="container">
+      <nav class="display-flex align-item">
+        <div class="nav-avatar display-flex justify-content-between ">
+          <div class="display-flex align-item">
+            <img id="avatar" src="" alt="">
+            <div class="margin-left">
+              <h2 id="nav-name-user"></h2>
+              <p id="bio-user"></p>
+            </div>
+
+          </div>
+          <div>
+            <button class="btn-email">E-mail</button>
+            <button onclick="backToHomePage()" class="btn-change-user">Trocar de Usuário</button>
+          </div>
+        </div>
+      </nav>
+      <ul class="repository"></ul>
+
+    </main>
+    <script src="./index.js"></script>
   </body>
 </html>
