@@ -31,12 +31,25 @@ main{
 }
 .another-users{
     gap: 1rem;
-    
 }
 .another-users span{
-    color:transparent;
+    display: none;
 }
-.another-users span:hover{
+
+.another-users p{
+    color: var(--color-grey-7);
+    margin-top: 3rem;
+    
+}
+.another-users li{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.another-users li:hover > span{
+    display: block;
     background-color: var(--color-grey-7);
     border-radius: 4px;
     padding: 4px 8px 4px 8px;
@@ -44,15 +57,6 @@ main{
     display: flex;
     text-align: center;
     cursor: pointer;
-}
-.another-users p{
-    color: var(--color-grey-7);
-    
-}
-.another-users li{
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: column;
 }
 .another-users img:hover{
     border: 2px solid var(--color-grey-7);
